@@ -1,5 +1,6 @@
 package com.unitedlearningacademy.TutorialPlugin.wands;
 
+import org.bukkit.Material;
 import org.bukkit.Server;
 import org.bukkit.World;
 import org.bukkit.entity.Player;
@@ -33,6 +34,10 @@ public class MyFirstWand extends Wand {
 	@Override
 	public String getLore() {
 		return "Put a description of what your wand does here.";
+	}
+	
+	public Material getWandTip() {
+		return Material.ACACIA_BOAT;
 	}
 
 }

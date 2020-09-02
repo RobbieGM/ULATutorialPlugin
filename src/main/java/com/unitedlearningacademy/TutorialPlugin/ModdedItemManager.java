@@ -78,8 +78,8 @@ public class ModdedItemManager implements Listener {
 
 		wands.forEach((Wand wand) -> {
 			ShapedRecipe wandRecipe = createRecipeFromResult(Material.STICK, wand.getName(), wand.getLore());
-			wandRecipe.shape("  t", " s ", "b  ").setIngredient('t', Material.ACACIA_BOAT).setIngredient('s', Material.STICK)
-					.setIngredient('b', Material.BOWL);
+			wandRecipe.shape("  t", " s ", "b  ").setIngredient('t', wand.getWandTip()).setIngredient('s', Material.STICK)
+					.setIngredient('b', Material.ENDER_PEARL);
 			plugin.getServer().addRecipe(wandRecipe);
 			
 			// Disabled event handling due to complication for new programmers

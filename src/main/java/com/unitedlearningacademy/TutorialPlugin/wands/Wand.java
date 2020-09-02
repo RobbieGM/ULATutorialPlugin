@@ -4,6 +4,7 @@ import javax.annotation.Nullable;
 
 import org.bukkit.FluidCollisionMode;
 import org.bukkit.Location;
+import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.util.RayTraceResult;
 
@@ -43,4 +44,6 @@ public abstract class Wand extends UseableItem {
 		}
 		return result.getHitPosition().toLocation(player.getWorld());
 	}
+	
+	abstract public Material getWandTip();
 }
